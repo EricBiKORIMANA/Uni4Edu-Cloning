@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uni4Edu: Study Abroad, Summer Schools and Language Courses | Uni4Edu</title>
-    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
 
 <body>
     <section>
-        <div class="w-full h-10 bg-[#FCFCFD] border-b border-gray-500">
+        <div class="w-full h-10 bg-[#FCFCFD] border-b border-gray-500 hidden lg:block">
             <div class="max-w-7xl mx-auto flex justify-end p-2 gap-4">
                 <span class="text-sm font-bold cursor-pointer">Become an Agent</span>
                 <span class="text-sm font-bold cursor-pointer">Partnership</span>
@@ -35,11 +35,11 @@
         </div>
         <div class="w-full h-20">
             <div class="max-w-7xl mx-auto">
-                <div class="flex justify-between items-center gap-6">
-                    <div>
+                <div class="flex lg:justify-between items-center gap-2 lg:gap-6">
+                    <div class="flex items-left lg:items-left">
                         <img src="./images/logo.png" alt="" class="w-20">
                     </div>
-                    <div class="relative flex flex-row items-center text-md font-light gap-4">
+                    <div class="relative hidden lg:flex flex-row items-center text-md font-light gap-4">
                         <div class="group relative inline-block z-10">
                             <a href="#" class="font-bold">Universities <span><i
                                         class="fa-solid fa-angle-down"></i></span></a>
@@ -94,31 +94,52 @@
                         </div>
                         <a href="#" class="font-bold">High School</a>
                     </div>
-                    <div class="flex justify-between items-center gap-6">
-                        <span class="text-base text-[#4FC8DF]"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <button class="px-8 py-2 bg-[#4FC8DF] rounded-lg">Login</button>
+                    <div class="flex ml-32 lg:ml-0 items-center gap-2 lg:gap-6">
+                        <span class="text-lg lg:text-base text-[#4FC8DF]"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <button class="hidden lg:block px-8 py-2 bg-[#4FC8DF] rounded-lg">Login</button>
+                        <select class="flex lg:hidden outline-none text-lg font-light">
+                            <option selected>🇺🇸 EN</option>
+                            <option>🇹🇷 TR</option>
+                            <option>🇪🇸 ES</option>
+                            <option>🇸🇦 AR</option>
+                            <option>🇮🇳 HI</option>
+                            <option>🇯🇵 JA</option>
+                            <option>🇰🇷 KO</option>
+                            <option>🇲🇾 MS</option>
+                            <option>🇷🇺 RU</option>
+                            <option>🇰🇪 SW</option>
+                            <option>🇫🇷 FR</option>
+                            <option>🇩🇪 DE</option>
+                            <option>🇮🇹 IT</option>
+                        </select>
+                        <button id="menuBtn" class="block lg:hidden text-2xl"><i class="fa-solid fa-bars"></i></button>
+                        <div id="menu" class="hidden absolute top-24 left-0 right-0 mx-6 bg-white rounded-2xl  shadow-2xl lg:hidden z-50 border border-white">
+                            
+
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
-        <div class="w-full h-[90vh] bg-[url('./images/banner-bg.jpeg')] bg-cover">
-            <div class="max-w-[50%] flex flex-col justify-center py-20 pl-16 gap-6">
-                <span class="text-[40px] text-white font-extrabold">Find Your Perfect University, Language School or
+        <div class="w-full  h-[90vh] bg-[url('./images/banner-bg.jpeg')] bg-cover">
+            <div class="max-w-full lg:max-w-[50%] flex flex-col justify-center py-20 pl-6 lg:pl-16 gap-6">
+                <span class="text-2xl lg:text-[40px] text-white font-extrabold">Find Your Perfect University, Language School or
                     Summer Schools Program</span>
-                <p class="text-white text-xl w-[80%]">Uni4edu simplifies the journey to studying abroad by bringing top
+                <p class="text-white text-xl w-[100%] lg:w-[80%]">Uni4edu simplifies the journey to studying abroad by bringing top
                     institutions worldwide into a single digital platform.
                     Manage your entire process—from school selection to application—directly within the system and
                     achieve your academic and
                     career goals online.</p>
-                <div class="flex items-center gap-6">
-                    <button class="py-2 px-8 bg-[#4FC8DF] text-white hover:opacity-80 rounded-lg cursor-pointer">Explore
+                <div class="flex flex-col lg:flex-row items-center gap-6">
+                    <button class="py-2 px-18 lg:px-8 bg-[#4FC8DF] text-white hover:opacity-80 rounded-lg cursor-pointer">Explore
                         Programs</button>
-                    <button class="py-2 px-8 bg-[#FFF] text-[#5EA5B2] hover:opacity-80 rounded-lg cursor-pointer">Get
+                    <button class="py-2 px-20 lg:px-8 bg-[#FFF] text-[#5EA5B2] hover:opacity-80 rounded-lg cursor-pointer">Get
                         Free Advice</button>
                 </div>
             </div>
         </div>
-        <div class="absolute -bottom-25 left-28 bg-[#ABB0C7]/70 w-[85%] h-[20vh] rounded-xl backdrop-blur-sm">
+        <div class="absolute -bottom-25 left-28 hidden lg:flex bg-[#ABB0C7]/70 w-[85%] h-[20vh] rounded-xl backdrop-blur-sm">
             <div class="max-w-7xl mx-auto px-2">
                 <div class="flex items-center pt-2">
                     <span class="py-2 px-4 bg-blue-500 rounded-t-xl text-white">University Programs</span>
@@ -181,13 +202,13 @@
     </section>
 
     <section class="mt-32 bg-white w-full h-[60vh]">
-        <div class="relative max-w-7xl mx-auto">
+        <div class="relative max-w-7xl mx-auto px-4 lg:px-0">
             <div class="flex flex-col gap-4">
                 <span class="text-4xl font-bold">Why Choose Uni4Edu?</span>
                 <p class="text-x">Uni4Edu brings together thousands of schools and programs on a single platform, making it easy for students to apply
                 quickly and access free counseling, visa support, and exclusive scholarship opportunities.</p>
             </div>
-            <div class="grid grid-cols-3 gap-6 pt-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-8">
                 <div class="flex flex-col gap-4 border-2 border-gray-200 p-6 rounded-lg">
                     <div class="flex flex-row gap-6">
                         <span class="text-[#4FC8DF] text-4xl"><i class="fa-solid fa-school"></i></span>
@@ -215,17 +236,17 @@
                 
             </div>
 
-            <div class="absolute -bottom-60 left-0 w-full h-[25vh] flex items-center justify-around bg-white border-2 border-gray-200 rounded-lg p-6 mt-32 shadow-lg">
+            <div class="absolute -bottom-65 lg:-bottom-60 left-5 lg:left-0 w-[90%] lg:w-full h-[34vh] lg:h-[25vh] flex flex-col lg:flex-row items-center justify-around bg-white border-2 border-gray-200 rounded-lg px-4 lg:p-6 lg:mt-32 shadow-lg">
                 <div class="flex flex-col items-center w-96 border-r border-gray-400">
-                    <span class="text-3xl font-extrabold">50,000 +</span>
+                    <span class="text-xl lg:text-3xl font-extrabold">50,000 +</span>
                     <span class="text-base font-light">Courses and Programs</span>
                 </div>
                 <div class="flex flex-col items-center w-96 border-r border-gray-400">
-                    <span class="text-3xl font-extrabold">150 +</span>
+                    <span class="text-xl lg:text-3xl font-extrabold">150 +</span>
                     <span class="text-base font-light">Study Destinations</span>
                 </div>
                 <div class="flex flex-col items-center w-96">
-                    <span class="text-3xl font-extrabold">%98</span>
+                    <span class="text-xl lg:text-3xl font-extrabold">%98</span>
                     <span class="text-base font-light">Success Rate</span>
                 </div>
             </div>
@@ -233,12 +254,12 @@
     </section>
 
 
-    <section class="mt-20 bg-[#F7F7F6] w-full pb-20">
-        <div class="max-w-7xl mx-auto pt-32">
+    <section class="mt-32 lg:mt-20 bg-[#F7F7F6] w-full pt-0 lg:pb-20">
+        <div class="max-w-7xl mx-auto pt-200 lg:pt-32 px-4">
             <div class="flex">
                 <span class="text-4xl font-bold">Find the Best Fit for Your Goals</span>
             </div>
-            <div class="grid grid-cols-3 gap-6 pt-8 flex justify-between items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-8 flex justify-between items-center">
                 <div class="flex flex-col item-left p-4 bg-white shadow-xl rounded-lg gap-2">
                     <div class="w-96 h-32 overflow-hidden">
                         <img src="./images/1.jpeg" alt="" class="w-full h-full object-cover rounded-lg">
@@ -280,7 +301,7 @@
                 <span class="text-3xl font-bold">Webinar</span>
                 <a href="#" class="text-base font-bold text-[#1C8193] hover:underline cursor-pointer">All webinars</a>
             </div>
-            <div class="grid grid-cols-3 gap-6 pt-8 flex justify-between items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-8 flex justify-between items-center">
                 <div class="flex flex-col bg-white shadow-xl rounded-lg gap-2">
                     <div class="relative h-32 overflow-hidden">
                         <img src="./images/4.jpeg" alt="" class="w-full h-full object-cover rounded-t-lg">
@@ -349,17 +370,17 @@
     </section>
 
     <section class="mt-20">
-        <div class="max-w-7xl mx-auto flex flex-col gap-4">
+        <div class="max-w-7xl mx-auto flex flex-col gap-4 px-4">
             <span class="text-4xl font-bold">Your Academic Bridge to University</span>
             <p class="text-base">For students who need academic preparation before entering a university, foundation programs help build essential skills
             and subject-specific knowledge. Required for direct entry into UK universities unless students have A-Level, IB, or AP
             qualifications.</p>
         </div>
         <div class="bg-[url('./images/art.png')] min-h-[530px] bg-cover bg-center overflow-hidden">
-            <div class="max-w-7xl mx-auto pt-20">
-                <div class="max-w-[55%] flex flex-col gap-12">
-                    <span class="text-2xl">Foundation Programs</span>
-                    <div class="grid grid-cols-2 gap-4">
+            <div class="max-w-7xl mx-auto pt-20 px-4">
+                <div class="max-w-[90%] lg:max-w-[55%] flex flex-col gap-12 px-6 lg:px-0">
+                    <span class="text-2xl pt-10 lg:pt-0">Foundation Programs</span>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
                         <div class="px-8 py-2 bg-white rounded-lg flex items-center gap-4">
                             <span class="text-3xl text-[#79BBC8]"><i class="fa-brands fa-leanpub"></i></span>
                             <span class="text-lg font-light">Develop subject-specific knowledge</span>
@@ -384,12 +405,12 @@
     </section>
 
     <section class="mt-10 bg-[#F7F7F6] pb-15">
-        <div class="max-w-7xl mx-auto flex flex-col gap-12">
+        <div class="max-w-7xl mx-auto flex flex-col gap-12 px-4">
             <div class="flex items-center justify-between pt-10">
                 <span class="text-3xl font-bold">Events</span>
                 <a href="#" class="text-base font-bold text-[#1C8193] hover:underline cursor-pointer">All Events</a>
             </div>
-            <div class="flex flex-col w-[32%] flex-start bg-white shadow-xl rounded-lg gap-2">
+            <div class="flex flex-col w-[100%] lg:w-[32%] flex-start bg-white shadow-xl rounded-lg gap-2">
                 <div class="relative h-32 overflow-hidden">
                     <img src="./images/flyer.jpeg" alt="" class="w-full h-full object-cover rounded-t-lg">
                     <span
@@ -414,16 +435,16 @@
 
 
     <section class="mt-20">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-9 flex items-start">
-                <div class="flex flex-col items-center justify-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-9 flex items-start">
+                <div class="hidden lg:flex flex-col items-center justify-center">
                     <div class="w-8 h-8 bg-gray-700 border-5 border-gray-400 rounded-full"></div>
                     <div class="py-[420px] px-1 border-r-2 border-dashed border-gray-400"></div>
                 </div>
-                <div class="col-span-8 flex flex-col gap-2">
+                <div class="lg:col-span-8 flex flex-col gap-2">
                     <span class="text-3xl font-bold">The Easiest Way to Study Abroad</span>
                     <div class="grid grid-cols-5 pt-10 gap-6">
-                        <div class="col-span-2 flex flex-col gap-20">
+                        <div class="col-span-4 lg:col-span-2 flex flex-col gap-20">
                             <div class="flex flex-col gap-4">
                                 <span class="text-2xl font-bold text-[#556D79]">Find Your School.</span>
                                 <p class="text-lg">·Find Top Universities, High Schools, Language Schools, And Summer or Winter Programs That Fit Your Goals And Interests.
@@ -443,10 +464,10 @@
                             </div>
                         </div>
                     
-                        <div class="grid col-span-3">
-                            <div class="grid grid-cols-3 gap-4 auto-rows-auto h-[60vh]">
+                        <div class="hidden lg:block lg:grid col-span-3">
+                            <div class="grid grid-cols-3 gap-4 auto-rows-auto h-[95vh]">
                                 <div class="relative rounded-xl overflow-hidden shadow-sm">
-                                    <img src="./images/6.png" alt="" class="w-full h-full object-cover">
+                                    <img src="./images/8.png" alt="" class="w-full h-full object-cover">
                                 </div>
                                 <div class="sm:row-span-5 relative rounded-xl overflow-hidden shadow-sm">
                                     <img src="./images/13.png" alt="" class="w-full h-full object-cover">
@@ -478,16 +499,16 @@
                             </div>
                         </div>
                     </div>
-                    <button class="py-2 px-4 w-36 bg-[#37474F] text-white rounded-lg">Contact Us</button>
+                    <button class="py-2 px-4 w-36 mt-10 bg-[#37474F] text-white rounded-lg">Contact Us</button>
                 </div>
             </div>
         </div>
     </section>
     
     <section class="mt-32 pb-16 bg-[#F7F7F6]">
-        <div class="max-w-7xl mx-auto pt-20">
+        <div class="max-w-7xl mx-auto pt-20 px-4">
             <span class="text-4xl font-bold ">Discover the Best Places to Study</span>
-            <div class="grid grid-cols-3 gap-6 pt-8 flex justify-between items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-8 flex justify-between items-center">
                 <div class="flex flex-col bg-white shadow-xl rounded-lg gap-2">
                     <div class="h-32 overflow-hidden">
                         <img src="./images/australia.png" alt="" class="w-full h-full object-cover rounded-t-lg">
@@ -533,12 +554,12 @@
     </section>
 
     <section class="mt-16 pb-16">
-        <div class="max-w-7xl mx-auto">
+        <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center justify-between pt-10">
                 <span class="text-4xl font-bold">Latest News</span>
                 <a href="#" class="text-base font-bold text-[#1C8193] hover:underline cursor-pointer">View All</a>
             </div>
-            <div class="grid grid-cols-3 gap-6 pt-8 flex justify-between items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-8 flex justify-between items-center">
                 <div class="flex flex-col bg-white shadow-xl rounded-lg gap-2">
                     <div class="h-32 overflow-hidden">
                         <img src="./images/18.jpeg" alt="" class="w-full h-full object-cover rounded-t-lg">
@@ -586,7 +607,7 @@
     </section>
 
     <section class="mt-20 bg-[#F7F7F6] pt-20 pb-15">
-        <div class="max-w-7xl mx-auto flex flex-col gap-4">
+        <div class="max-w-7xl mx-auto flex flex-col gap-4 px-4">
             <div class="flex flex-col gap-4 text-base font-light">
                 <span class="text-2xl font-bold">University Programs</span>
                 <span>Taking the first step toward your dream university has never been easier!</span>
@@ -657,28 +678,29 @@
         </div>
     </section>
 
-    <footer class="mt-20 pb-40">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-7 flex justify-around flex-start">
-                <div class="col-span-4 flex justify-around items-center">
+    <footer class="mt-20 pb-15 lg:pb-40">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-7 flex flex-col lg:flex-row justify-around items-center gap-6 lg:gap-0 flex-start">
+                <div class="lg:col-span-4 flex flex-col lg:flex-row justify-around items-center gap-4">
                     <div class="flex flex-col items-center gap-4">
                         <img src="./images/home.svg" alt="" class="w-28">
                         <span class="text-sm text-gray-400">Copyright &copy; 2024 Uni4Edu</span>
                     </div>
-                    <div class="w-2 h-26 border-l border-gray-600"></div>
-                    <div class="flex">
+                    <div class="hidden lg:block w-2 h-26 border-l border-gray-600"></div>
+                    <div class="block lg:hidden w-[30%] h-2 border-b border-gray-600"></div>
+                    <div class="flex flex-col items-center lg:flex-row">
                         <img src="./images/badge.png" alt="" class="w-28">
                         <img src="./images/british.png" alt="" class="w-46">
                     </div>
                 </div>
-                <div class="flex flex-col items-start text-sm">
+                <div class="flex flex-col items-center lg:items-start text-sm">
                     <a href="#">About Us</a>
                     <a href="#">Contact Us</a>
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms and Conditions</a>
                     <a href="#">Partnership</a>
                 </div>
-                <div class="flex flex-col items-start text-sm">
+                <div class="flex flex-col items-center lg:items-start text-sm">
                     <a href="#">Universities</a>
                     <a href="#">Masters</a>
                     <a href="#">Language Schools</a>
@@ -686,7 +708,7 @@
                     <a href="#">Summer/Winter Schools</a>
                     <a href="#">High School</a>
                 </div>
-                <div class="flex flex-col items-start gap-4">
+                <div class="flex flex-col items-center lg:items-start gap-4">
                     <a href="#">Follow us</a>
                     <div class="flex justify-between text-xl gap-4">
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -700,6 +722,14 @@
         </div>
     </footer>
 
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
     
 </body>
 
